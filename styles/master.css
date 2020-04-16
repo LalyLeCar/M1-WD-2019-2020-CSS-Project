@@ -7,6 +7,14 @@ section {
   min-height: 65vh;
 }
 
+@font-face {
+ font-family: "Optician-Sans";
+ src: url("fonts/Optician-Sans.otf") format('truetype');
+}
+h1 {
+  font-family: "Optician-Sans";
+}
+
 h1 {
   margin-right: 10px;
 }
