@@ -96,3 +96,23 @@ h1 {
   display:none;
   transform: translate3d(-335px, 0, 0);
 }
+
+/*INDEX2*/
+
+#back_button {
+  background-color: lightblue;
+  padding: 15px;
+  margin: 20px;
+  font-family: 'Montserrat';
+}
+
+#containergrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+.box{
+  background: #333;
+  color: #fff;
+  padding: 10%;
+}
