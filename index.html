@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-  <meta charset="utf-8">
-  <title> CSS class</title>
-  <link rel="stylesheet" href="styles/master.css">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <h1>Hello world wide web !</h1>
-  <head>
-    <a href="#main-menu">Open menu</a>
-    <nav id="main-menu">
-      <ul>
-        <li> <a href="#section01"> Go to section 01</a></li>
-        <li> <a href="#section02"> Go to section 02</a></li>
-      </ul>
-      <a href="#" class="close-menu">Close menu</a>
-    </nav>
-  </head>
-  <section id="section01">
-    <p>this is section 1</p>
-  </section>
-  <section id="section02">
-    <p>this is section 2</p>
-  </section>
+
+    <div id="container">
+      <header class="header">
+        <nav class="nav">
+          <a href="#container" id="open">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="27px" viewBox="0 0 34 27" enable-background="new 0 0 34 27" xml:space="preserve">
+              <rect fill="#FFFFFF" width="34" height="4"/>
+              <rect y="11" fill="#FFFFFF" width="34" height="4"/>
+              <rect y="23" fill="#FFFFFF" width="34" height="4"/>
+            </svg>
+          </a>
+          <a href="#" id="close">X</a>
+          <h1><a href="#">Where do you want to go?</a></h1>
+          <a href="#section01">About Apes</a>
+          <a href="#section02">Show me all the Apes</a>
+          <a href="#section03">Apes fun fact</a>
+        </nav>
+      </header>
+      <main class="main" id="main">
+
+        <h1>Hello, let's talk about Apes</h1>
+
+        <section id="section01">
+          <p>section 1</p>
+        </section>
+
+        <section id="section02">
+          <p>section 2</p>
+        </section>
+
+        <section id="section03">
+          <p>section 3</p>
+        </section>
+
+      </main>
+      <a id="backdrop" href="#backdrop"></a>
+
+    </div>
+
   </body>
 </html>
