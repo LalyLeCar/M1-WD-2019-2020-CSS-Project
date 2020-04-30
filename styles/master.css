@@ -111,8 +111,15 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
 }
+#containergrid:target {
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .box{
   background: #333;
   color: #fff;
   padding: 10%;
+  border: solid 2px lightblue;
 }
