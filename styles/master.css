@@ -131,8 +131,9 @@ h2 {
   justify-content: space-between;
 }
 .box{
-  background: #E76F51;
+  background: #e6eee0;
   color: #fff;
+  border-radius: 20px;
   padding: 10px;
   margin: 10px;
 }
