@@ -11,6 +11,7 @@ section {
  font-family: "Optician-Sans";
  src: url("fonts/Optician-Sans.otf") format('truetype');
 }
+
 h1 {
   font-family: "Optician-Sans";
 }
@@ -99,27 +100,39 @@ h1 {
 
 /*INDEX2*/
 
+h2 {
+  font-family: "Montserrat";
+  margin-left: 10px;
+}
+
 #back_button {
   background-color: lightblue;
+  color: white;
   padding: 15px;
-  margin: 20px;
+  display: block;
+  width: 50px;
   font-family: 'Montserrat';
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 #containergrid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
+  background-color: white;
 }
 #containergrid:target {
-  background: yellow;
+  background: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .box{
-  background: #333;
+  background: #E76F51;
   color: #fff;
-  padding: 10%;
-  border: solid 2px lightblue;
+  padding: 10px;
+  margin: 10px;
 }
