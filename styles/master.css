@@ -129,8 +129,17 @@ h2 {
   border-radius: 50px;
 }
 
+#containergrid img{
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
 #containergrid:target img{
   width:10%;
+  -webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 #containergrid{
@@ -145,10 +154,14 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
 }
-.box{
-  background: #e6eee0;
+
+#containergrid:target .box{
   animation-name: colorchanging;
   animation-duration: 4s;
+}
+
+.box{
+  background: #e6eee0;
   color: #fff;
   border-radius: 20px;
   padding: 10px;
@@ -157,5 +170,5 @@ h2 {
 
 @keyframes colorchanging {
   from {background-color: #e6eee0;}
-  to {background-color: #cadfed;}
+  to {background-color: #fcdc59;}
 }
