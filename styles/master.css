@@ -110,17 +110,32 @@ h2 {
   color: white;
   padding: 15px;
   display: block;
-  width: 50px;
+  width: 100%;
   font-family: 'Montserrat';
   text-align: center;
-  margin: 20px;
-  border-radius: 10px;
   text-decoration: none;
+}
+
+#btn_flex, #btn_grid {
+  background-color: #c2d9ab;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  width: 60px;
+  display: inline-block;
+  font-family: 'Montserrat';
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+#containergrid:target img{
+  width:10%;
 }
 
 #containergrid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-gap: 15px;
   background-color: white;
 }
@@ -132,8 +147,15 @@ h2 {
 }
 .box{
   background: #e6eee0;
+  animation-name: colorchanging;
+  animation-duration: 4s;
   color: #fff;
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
+}
+
+@keyframes colorchanging {
+  from {background-color: #e6eee0;}
+  to {background-color: #cadfed;}
 }
